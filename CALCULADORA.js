@@ -9,7 +9,7 @@ function updateDisplay() {
 
 // Adiciona um número ou ponto no display
 function appendNumber(number) {
-    if (number === '.' && currentInput.includes('.')) return; // Evita múltiplos pontos
+    if (number === '.' && currentInput.includes('.')) return; 
     currentInput += number.toString();
     updateDisplay();
 }
@@ -18,7 +18,7 @@ function appendNumber(number) {
 function setOperation(op) {
     if (currentInput === '') return;
     if (previousInput !== '') {
-        calculate(); // Se já há um número anterior, realiza o cálculo antes de mudar a operação
+        calculate(); 
     }
     operation = op;
     previousInput = currentInput;
